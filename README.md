@@ -1,1 +1,1 @@
-My academic personal website is https://naclzno.github.io/Xinyuan-Yan/.
+My personal academic website is https://naclzno.github.io/Xinyuan-Yan/.
