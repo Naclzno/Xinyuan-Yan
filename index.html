@@ -86,7 +86,7 @@
   <tr>
     <td width="30%" valign="top"><a href="images/XinyuanYan-2024.jpg"><img src="images/XinyuanYan-2024.jpg" width="100%" style="border-radius:15px"></a>
     <p align=center>
-    | <a href="data/Xinyuan Yan_CV_20250308.pdf">CV</a> |
+    | <a href="data/Xinyuan Yan_CV_20250730.pdf">CV</a> |
     <a href="mailto:yan1075783878@gmail.com">Email</a> |
     <a href="https://scholar.google.com/citations?user=D_Ay8fQAAAAJ&hl=en-US">Google Scholar</a> |
     <br/>
@@ -146,378 +146,52 @@
 </table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-  <!-- <tr>
-    <td width="40%" valign="top" align="center"><a href="https://omni.human2humanoid.com/">
-    <video playsinline autoplay loop muted src="images/omnih2o/Preview-OmniH2O.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://omni.human2humanoid.com/" id="OmniH2O">
-      <heading>OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning</heading></a><br>
-      Tairan He*, Zhengyi Luo*, Xialin He*, Wenli Xiao, Chong Zhang, Weinan Zhang, Kris Kitani, Changliu Liu, Guanya Shi  <br>
-      CoRL 2024<br>
-      </p>
-
-      <div class="paper" id="omnih2o">
-      <a href="https://omni.human2humanoid.com/">webpage</a> |
-      <a href="https://omni.human2humanoid.com/resources/OmniH2O_paper.pdf">pdf</a> |
-      <a href="javascript:toggleblock('omnih2o_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('omnih2o')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2406.08858">arXiv</a> |
-      <a href="https://github.com/LeCAR-Lab/human2humanoid">code</a> |
-      <a href="https://www.youtube.com/watch?v=ofgxZHv0GMk">video</a> |
-      <a href="https://spectrum.ieee.org/video-friday-drone-vs-flying-canoe">media (ieee spectrum)</a> 
-
-      
-
-      <p align="justify"> <i id="omnih2o_abs">We present OmniH2O (Omni Human-to-Humanoid), a learning-based system for whole-body humanoid teleoperation and autonomy. Using kinematic pose as a universal control interface, OmniH2O enables various ways for a human to control a full-sized humanoid with dexterous hands, including using real-time teleoperation through VR headset, verbal instruction, and RGB camera. OmniH2O also enables full autonomy by learning from teleoperated demonstrations or integrating with frontier models such as GPT-4. OmniH2O demonstrates versatility and dexterity in various real-world whole-body tasks through teleoperation or autonomy, such as playing multiple sports, moving and manipulating objects, and interacting with humans. We develop an RL-based sim-to-real pipeline, which involves large-scale retargeting and augmentation of human motion datasets, learning a real-world deployable policy with sparse sensor input by imitating a privileged teacher policy, and reward designs to enhance robustness and stability. We release the first humanoid whole-body control dataset, OmniH2O-6, containing six everyday tasks, and demonstrate humanoid whole-body skill learning from teleoperated datasets.</i></p>
-
-<pre xml:space="preserve">
-@article{he2024omnih2o,
-  title={OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning},
-  author={He, Tairan and Luo, Zhengyi and He, Xialin and Xiao, Wenli and Zhang, Chong and Zhang, Weinan and Kitani, Kris and Liu, Changliu and Shi, Guanya},
-  journal={arXiv preprint arXiv:2406.08858},
-  year={2024}
-}
-</pre>
-      </div>
-    </td>
-  </tr> -->
-
-  <!-- <tr>
-    <td width="40%" valign="top" align="center"><a href="https://lecar-lab.github.io/wococo/">
-    <video playsinline autoplay loop muted src="images/wococo/wococo-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://lecar-lab.github.io/wococo/" id="WoCoCo">
-      <heading>WoCoCo: Learning Whole-Body Humanoid Control with Sequential Contacts</heading></a><br>
-      Chong Zhang*, Wenli Xiao*, Tairan He, Guanya Shi  <br>
-      CoRL 2024 <b style="color:rgb(255, 100, 100);">(Oral)</b><br>
-      </p>
-
-      <div class="paper" id="wococo">
-      <a href="https://lecar-lab.github.io/wococo/">webpage</a> |
-      <a href="https://arxiv.org/pdf/2406.06005">pdf</a> |
-      <a href="javascript:toggleblock('wococo_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('wococo')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2406.06005">arXiv</a> |
-      <a href="https://www.youtube.com/watch?v=L18X-QbXqPI&ab_channel=LeCARLabatCMU">teaser video</a> |
-      <a href="https://www.youtube.com/watch?v=_S6DNhPDuTw&t=1s&ab_channel=LeCARLabatCMU">introduction video</a> |
-      <a href="https://spectrum.ieee.org/video-friday-drone-vs-flying-canoe">media (ieee spectrum)</a> 
-
-      
-
-      <p align="justify"> <i id="wococo_abs">Humanoid activities involving sequential contacts are crucial for complex robotic interactions and operations in the real world and are traditionally solved by model-based motion planning, which is time-consuming and often relies on simplified dynamics models. Although model-free reinforcement learning (RL) has become a powerful tool for versatile and robust whole-body humanoid control, it still requires tedious task-specific tuning and state machine design and suffers from long-horizon exploration issues in tasks involving contact sequences. In this work, we propose WoCoCo (Whole-Body Control with Sequential Contacts), a unified framework to learn whole-body humanoid control with sequential contacts by naturally decomposing the tasks into separate contact stages. Such decomposition facilitates simple and general policy learning pipelines through task-agnostic reward and sim-to-real designs, requiring only one or two task-related terms to be specified for each task. We demonstrated that end-to-end RL-based controllers trained with WoCoCo enable four challenging whole-body humanoid tasks involving diverse contact sequences in the real world without any motion priors: 1) versatile parkour jumping, 2) box loco-manipulation, 3) dynamic clap-and-tap dancing, and 4) cliffside climbing. We further show that WoCoCo is a general framework beyond humanoid by applying it in 22-DoF dinosaur robot loco-manipulation tasks.</i></p>
-
-<pre xml:space="preserve">
-  @article{zhang2024wococo,
-    title={WoCoCo: Learning Whole-Body Humanoid Control with Sequential Contacts},
-    author={Zhang, Chong and Xiao, Wenli and He, Tairan and Shi, Guanya},
-    journal={arXiv e-prints},
-    pages={arXiv--2406},
-    year={2024}
-  }
-  
-</pre>
-      </div>
-    </td>
-  </tr> -->
-
-
-  <!-- <tr>
-    <td width="40%" valign="top" align="center"><a href="https://human2humanoid.com/">
-    <video playsinline autoplay loop muted src="images/h2o/h2o-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://human2humanoid.com/" id="H2O">
-      <heading>Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation</heading></a><br>
-      Tairan He*, Zhengyi Luo*, Wenli Xiao, Chong Zhang, Kris Kitani, Changliu Liu, Guanya Shi  <br>
-      IROS 2024 <b style="color:rgb(255, 100, 100);">(Oral Presentation)</b><br>
-      ICRA 2024 Agile Robotics Workshop (Spotlight)<br>
-      </p>
-
-      <div class="paper" id="h2o">
-      <a href="https://human2humanoid.com/">webpage</a> |
-      <a href="https://human2humanoid.com/resources/H2O_paper.pdf">pdf</a> |
-      <a href="javascript:toggleblock('h2o_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('h2o')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2403.04436">arXiv</a> |
-      <a href="https://github.com/LeCAR-Lab/human2humanoid">code</a> |
-      <a href="https://www.youtube.com/watch?v=0W4N2q7xtcQ&ab_channel=LeCARLabatCMU">video</a> |
-      <a href="https://spectrum.ieee.org/video-friday-human-to-humanoid">media (ieee spectrum)</a> 
-
-      
-
-      <p align="justify"> <i id="h2o_abs">We present <span style="color: Red;">H</span>uman <span style="color: Red;">to</span> Human<span style="color: Red;">o</span>id (<strong>H2O</strong>), a reinforcement learning (RL) based framework that enables real-time whole-body teleoperation of a full-sized humanoid robot with only an RGB camera. To create a large-scale retargeted motion dataset of human movements for humanoid robots, we propose a scalable ''sim-to-data" process to filter and pick feasible motions using a privileged motion imitator. Afterwards, we train a robust real-time humanoid motion imitator in simulation using these refined motions and transfer it to the real humanoid robot in a zero-shot manner. We successfully achieve teleoperation of dynamic whole-body motions in real-world scenarios, including walking, back jumping, kicking, turning, waving, pushing, boxing, etc. To the best of our knowledge, this is the first demonstration to achieve learning-based real-time whole-body humanoid teleoperation.</i></p>
-
-<pre xml:space="preserve">
-@article{he2024learning,
-  title={Learning human-to-humanoid real-time whole-body teleoperation},
-  author={He, Tairan and Luo, Zhengyi and Xiao, Wenli and Zhang, Chong and Kitani, Kris and Liu, Changliu and Shi, Guanya},
-  journal={arXiv preprint arXiv:2403.04436},
-  year={2024}
-}
-</pre>
-      </div>
-    </td>
-  </tr> -->
-
-  <!-- <tr>
-    <td width="40%" valign="top" align="center"><a href="https://agile-but-safe.github.io/">
-    <video playsinline autoplay loop muted src="images/agile-but-safe/abs-gif-preview-long.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://agile-but-safe.github.io/" id="AGILE-BUT-SAFE">
-      <heading>Agile But Safe: Learning Collision-Free High-Speed Legged Locomotion</heading></a><br>
-      Tairan He*, Chong Zhang*, Wenli Xiao, Guanqi He, Changliu Liu, Guanya Shi<br>
-      RSS 2024 <b style="color:rgb(255, 100, 100);">(Outstanding Student Paper Award Finalist - Top 3)</b><br>
-      ICRA 2024 Agile Robotics Workshop (Spotlight)<br>
-      </p>
-
-      <div class="paper" id="agile-but-safe">
-      <a href="https://agile-but-safe.github.io/">webpage</a> |
-      <a href="https://arxiv.org/pdf/2401.17583.pdf">pdf</a> |
-      <a href="javascript:toggleblock('agile-but-safe_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('agile-but-safe')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2401.17583">arXiv</a> |
-      <a href="https://github.com/LeCAR-Lab/ABS">code</a> |
-      <a href="https://www.youtube.com/watch?v=elWwPn5IhjA">real-world demo</a> |
-      <a href="https://www.youtube.com/watch?v=oyMf-yaB2d0">video story</a> |
-      <a href="https://spectrum.ieee.org/video-friday-agile-but-safe">media (ieee spectrum)</a> 
-
-      
-
-      <p align="justify"> <i id="agile-but-safe_abs">Legged robots navigating cluttered environments must be jointly agile for efficient task execution and safe to avoid collisions with obstacles or humans. Existing studies either develop conservative controllers (< 1.0 m/s) to ensure safety, or focus on agility without considering potentially fatal collisions. This paper introduces Agile But Safe (ABS), a learning-based control framework that enables agile and collision-free locomotion for quadrupedal robots. ABS involves an agile policy to execute agile motor skills amidst obstacles and a recovery policy to prevent failures, collaboratively achieving high-speed and collision-free navigation. The policy switch in ABS is governed by a learned control-theoretic reach-avoid value network, which also guides the recovery policy as an objective function, thereby safeguarding the robot in a closed loop. The training process involves the learning of the agile policy, the reach-avoid value network, the recovery policy, and an exteroception representation network, all in simulation. These trained modules can be directly deployed in the real world with onboard sensing and computation, leading to high-speed and collision-free navigation in confined indoor and outdoor spaces with both static and dynamic obstacles.</i></p>
-
-<pre xml:space="preserve">
-  @article{he2024agile,
-    title={Agile but safe: Learning collision-free high-speed legged locomotion},
-    author={He, Tairan and Zhang, Chong and Xiao, Wenli and He, Guanqi and Liu, Changliu and Shi, Guanya},
-    journal={arXiv preprint arXiv:2401.17583},
-    year={2024}
-  }
-</pre>
-      </div>
-    </td>
-  </tr> -->
-
-  <!-- <tr>
-    <td width="40%" valign="top" align="center"><a href="https://sites.google.com/view/safe-deep-policy-adaptation">
-    <video playsinline autoplay loop muted src="images/safedpa/SafeDPA-showoff.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://sites.google.com/view/safe-deep-policy-adaptation" id="SAFEDPA">
-      <heading>Safe Deep Policy Adaption</heading></a><br>
-      Wenli Xiao*, Tairan He*, John Dolan, Guanya Shi<br>
-      ICRA 2024<br>
-      CoRL 2023 Deployable Workshop<br>
-      
-      </p>
-
-      <div class="paper" id="safedpa">
-      <a href="https://sites.google.com/view/safe-deep-policy-adaptation">webpage</a> |
-      <a href="https://arxiv.org/pdf/2310.08602.pdf">pdf</a> |
-      <a href="javascript:toggleblock('safedpa_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('safedpa')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2310.08602">arXiv</a> |
-      <a href="https://github.com/LeCAR-Lab/SafeDPA">code</a> |
-      <a href="https://www.youtube.com/watch?v=PkyRzlRQVbE">video</a>
-
-      <p align="justify"> <i id="safedpa_abs">A critical goal of autonomy and artificial intelligence is enabling autonomous robots to rapidly adapt in dynamic and uncertain environments. Classic adaptive control and safe control provide stability and safety guarantees but are limited to specific system classes. In contrast, policy adaptation based on reinforcement learning (RL) offers versatility and generalizability but presents safety and robustness challenges. We propose SafeDPA, a novel RL and control framework that simultaneously tackles the problems of policy adaptation and safe reinforcement learning. SafeDPA jointly learns adaptive policy and dynamics models in simulation, predicts environment configurations, and fine-tunes dynamics models with few-shot real-world data. A safety filter based on the Control Barrier Function (CBF) on top of the RL policy is introduced to ensure safety during real-world deployment. We provide theoretical safety guarantees of SafeDPA and show the robustness of SafeDPA against learning errors and extra perturbations. Comprehensive experiments on (1) classic control problems (Inverted Pendulum), (2) simulation benchmarks (Safety Gym), and (3) a real-world agile robotics platform (RC Car) demonstrate great superiority of SafeDPA in both safety and task performance, over state-of-the-art baselines. Particularly, SafeDPA demonstrates notable generalizability, achieving a 300% increase in safety rate compared to the baselines, under unseen disturbances in real-world experiments.</i></p>
-
-<pre xml:space="preserve">
-  @article{xiao2023safe,
-    title={Safe Deep Policy Adaptation},
-    author={Xiao, Wenli and He, Tairan and Dolan, John and Shi, Guanya},
-    journal={arXiv preprint arXiv:2310.08602},
-    year={2023}
-  }
-</pre>
-      </div>
-    </td>
-  </tr> -->
-
-
-  <!-- <tr>
-    <td width="40%" valign="top" align="center"><a href="https://arxiv.org/abs/2310.03379">
-      <video playsinline autoplay loop muted src="images/acs/ACS-Video.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-      </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://arxiv.org/abs/2310.03379" id="ACS">
-      <heading>Progressive Adaptive Chance-Constrained Safeguards for Reinforcement Learning</heading></a><br>
-      Zhaorun Chen, Binhao Chen, Tairan He, Liang Gong, Chengliang Liu<br>
-      IROS 2024 <b style="color:rgb(255, 100, 100);">(Oral Pitch)</b><br>
-      </p>
-
-      <div class="paper" id="acs">
-       
-      <a href="https://arxiv.org/pdf/2310.03379.pdf">pdf</a> |
-      <a href="javascript:toggleblock('acs_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('acs')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2310.03379">arXiv</a> 
-
-      <p align="justify"> <i id="acs_abs">An attached arm can significantly increase the applicability of legged robots to several mobile manipulation tasks that are not possible for the wheeled or tracked counterparts. The standard control pipeline for such legged manipulators is to decouple the controller into that of manipulation and locomotion. However, this is ineffective and requires immense engineering to support coordination between the arm and legs, error can propagate across modules causing non-smooth unnatural motions. It is also biological implausible where there is evidence for strong motor synergies across limbs. In this work, we propose to learn a unified policy for whole-body control of a legged manipulator using reinforcement learning. We propose Regularized Online Adaptation to bridge the Sim2Real gap for high-DoF control, and Advantage Mixing exploiting the causal dependency in the action space to overcome local minima during training the whole-body system. We also present a simple design for a low-cost legged manipulator, and find that our unified policy can demonstrate dynamic and agile behaviors across several task setups.</i></p>
-
-<pre xml:space="preserve">
-  @article{chen2023progressive,
-    title={Progressive Adaptive Chance-Constrained Safeguards for Reinforcement Learning},
-    author={Chen, Zhaorun and Chen, Binhao and He, Tairan and Gong, Liang and Liu, Chengliang},
-    journal={arXiv preprint arXiv:2310.03379},
-    year={2023}
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="40%" valign="top" align="center">
-      <a href="https://arxiv.org/abs/2302.03122">
-          <img src="images/saferl_survey/saferl_survey.png" alt="sym" width="90%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
-      </a>
-    </td>
-    <td width="60%" valign="top">
-      <p><a href="https://arxiv.org/abs/2302.03122" id="SAFERL_SURVEY">
-      <heading>State-wise Safe Reinforcement Learning: A Survey</heading></a><br>
-      Weiye Zhao, Tairan He, Rui Chen, Tianhao Wei, Changliu Liu<br>
-      IJCAI 2023<br>
-      </p>
-
-      <div class="paper" id="saferl_survey">
-      <a href="https://arxiv.org/pdf/2302.03122.pdf">pdf</a> |
-      <a href="javascript:toggleblock('saferl_survey_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('saferl_survey')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2302.03122">arXiv</a> 
-
-      <p align="justify"> <i id="saferl_survey_abs">Despite the tremendous success of Reinforcement Learning (RL) algorithms in simulation environments, applying RL to real-world applications still faces many challenges. A major concern is safety, in another word, constraint satisfaction. State-wise constraints are one of the most common constraints in real-world applications and one of the most challenging constraints in Safe RL. Enforcing state-wise constraints is necessary and essential to many challenging tasks such as autonomous driving, robot manipulation. This paper provides a comprehensive review of existing approaches that address state-wise constraints in RL. Under the framework of State-wise Constrained Markov Decision Process (SCMDP), we will discuss the connections, differences, and trade-offs of existing approaches in terms of (i) safety guarantee and scalability, (ii) safety and reward performance, and (iii) safety after convergence and during training. We also summarize limitations of current methods and discuss potential future directions.</i></p>
-
-<pre xml:space="preserve">
-  @inproceedings{ijcai2023p763,
-    title     = {State-wise Safe Reinforcement Learning: A Survey},
-    author    = {Zhao, Weiye and He, Tairan and Chen, Rui and Wei, Tianhao and Liu, Changliu},
-    booktitle = {Proceedings of the Thirty-Second International Joint Conference on
-                 Artificial Intelligence, {IJCAI-23}},
-    publisher = {International Joint Conferences on Artificial Intelligence Organization},
-    editor    = {Edith Elkind},
-    pages     = {6814--6822},
-    year      = {2023},
-    month     = {8},
-    note      = {Survey Track},
-    doi       = {10.24963/ijcai.2023/763},
-    url       = {https://doi.org/10.24963/ijcai.2023/763},
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://sites.google.com/view/patchail/">
-      <video playsinline autoplay loop muted src="images/patchail/PatchAIL-Allplay-3.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-      </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://sites.google.com/view/patchail/" id="PATCHAIL">
-      <heading>Visual Imitation Learning with Patch Rewards</heading></a><br>
-      Minghuan Liu, Tairan He, Weinan Zhang, Shuicheng Yan, Zhongwen Xu
-      ICLR 2023<br>
-      </p>
-
-      <div class="paper" id="patchail">
-      <a href="https://sites.google.com/view/patchail/">webpage</a> |
-      <a href="https://arxiv.org/pdf/2302.00965.pdf">pdf</a> |
-      <a href="javascript:toggleblock('patchail_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('patchail')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2302.00965">arXiv</a> |
-      <a href="https://github.com/sail-sg/PatchAIL">code</a> 
-
-
-      <p align="justify"> <i id="patchail_abs">Visual imitation learning enables reinforcement learning agents to learn to be- have from expert visual demonstrations such as videos or image sequences, with- out explicit, well-defined rewards. Previous research either adopted supervised learning techniques or induce simple and coarse scalar rewards from pixels, ne- glecting the dense information contained in the image demonstrations. In this work, we propose to measure the expertise of various local regions of image sam- ples, or called patches, and recover multi-dimensional patch rewards accordingly. Patch reward is a more precise rewarding characterization that serves as a fine- grained expertise measurement and visual explainability tool. Specifically, we present Adversarial Imitation Learning with Patch Rewards (PatchAIL), which employs a patch-based discriminator to measure the expertise of different local parts from given images and provide patch rewards. The patch-based knowledge is also used to regularize the aggregated reward and stabilize the training. We evaluate our method on DeepMind Control Suite and Atari tasks. The experiment results have demonstrated that PatchAIL outperforms baseline methods and pro- vides valuable interpretations for visual demonstrations.</i></p>
-
-<pre xml:space="preserve">
-  @article{liu2023visual,
-    title={Visual imitation learning with patch rewards},
-    author={Liu, Minghuan and He, Tairan and Zhang, Weinan and Yan, Shuicheng and Xu, Zhongwen},
-    journal={arXiv preprint arXiv:2302.00965},
-    year={2023}
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="40%" valign="top" align="center">
-      <a href="https://arxiv.org/abs/2209.09134">
-          <img src="images/sisos/sisos.png" alt="sym" width="90%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
-      </a>
-    </td>
-    <td width="60%" valign="top">
-      <p><a href="https://arxiv.org/abs/2302.03122" id="SISOS">
-      <heading>Safety Index Synthesis via Sum-of-Squares Programming</heading></a><br>
-      Weiye Zhao*, Tairan He*, Tianhao Wei, Simin Liu, Changliu Liu<br>
-      ACC 2023<br>
-      </p>
-
-      <div class="paper" id="sisos">
-      <a href="https://arxiv.org/pdf/2209.09134.pdf">pdf</a> |
-      <a href="javascript:toggleblock('sisos_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('sisos')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2209.09134">arXiv</a> 
-
-      <p align="justify"> <i id="sisos_abs">Control systems often need to satisfy strict safety requirements. Safety index provides a handy way to evaluate the safety level of the system and derive the resulting safe control policies. However, designing safety index functions under control limits is difficult and requires a great amount of expert knowledge. This paper proposes a framework for synthesizing the safety index for general control systems using sum-of-squares programming. Our approach is to show that ensuring the non-emptiness of safe control on the safe set boundary is equivalent to a local manifold positiveness problem. We then prove that this problem is equivalent to sum-of-squares programming via the Positivstellensatz of algebraic geometry. We validate the proposed method on robot arms with different degrees of freedom and ground vehicles. The results show that the synthesized safety index guarantees safety and our method is effective even in high-dimensional robot systems.</i></p>
-
-<pre xml:space="preserve">
-  @inproceedings{zhao2023safety,
-    title={Safety index synthesis via sum-of-squares programming},
-    author={Zhao, Weiye and He, Tairan and Wei, Tianhao and Liu, Simin and Liu, Changliu},
-    booktitle={2023 American Control Conference (ACC)},
-    pages={732--737},
-    year={2023},
-    organization={IEEE}
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td width="40%" valign="top" align="center">
-      <a href="https://arxiv.org/abs/2210.01041">
-          <img src="images/uaissa/uaissa.png" alt="sym" width="90%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
-      </a>
-    </td>
-    <td width="60%" valign="top">
-      <p><a href="https://arxiv.org/abs/2302.03122" id="UAISSA">
-      <heading>Probabilistic Safeguard for Reinforcement Learning Using Safety Index Guided Gaussian Process Models</heading></a><br>
-      Weiye Zhao*, Tairan He*, Changliu Liu<br>
-      L4DC 2023<br>
-      </p>
-
-      <div class="paper" id="uaissa">
-      <a href="https://arxiv.org/pdf/2210.01041.pdf">pdf</a> |
-      <a href="javascript:toggleblock('uaissa_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('uaissa')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2210.01041">arXiv</a> 
-
-      <p align="justify"> <i id="uaissa_abs">Safety is one of the biggest concerns to applying reinforcement learning (RL) to the physical world. In its core part, it is challenging to ensure RL agents persistently satisfy a hard state constraint without white-box or black-box dynamics models. This paper presents an integrated model learning and safe control framework to safeguard any agent, where its dynamics are learned as Gaussian processes. The proposed theory provides (i) a novel method to construct an offline dataset for model learning that best achieves safety requirements; (ii) a parameterization rule for safety index to ensure the existence of safe control; (iii) a safety guarantee in terms of probabilistic forward invariance when the model is learned using the aforementioned dataset. Simulation results show that our framework guarantees almost zero safety violation on various continuous control tasks.</i></p>
-
-<pre xml:space="preserve">
-  @inproceedings{zhao2023probabilistic,
-    title={Probabilistic safeguard for reinforcement learning using safety index guided gaussian process models},
-    author={Zhao, Weiye and He, Tairan and Liu, Changliu},
-    booktitle={Learning for Dynamics and Control Conference},
-    pages={783--796},
-    year={2023},
-    organization={PMLR}
-  }
-</pre>
-      </div>
-    </td>
-  </tr> -->
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/921/2025/isprs-archives-XLVIII-G-2025-921-2025.html">
+          <img src="images/SnowSTNet/picture.png" alt="sym" width="80%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/921/2025/isprs-archives-XLVIII-G-2025-921-2025.html" id="LIDSOR">
+      <heading>SnowSTNet: A Spatial-Temporal LiDAR Point Cloud Denoising Network for Autonomous Driving in Snowy Weather</heading></a><br>
+      Yida Li, Xinyuan Yan, He Huang, Yu Liang, Yidan Zhang, Junxing Yang*<br>
+      ISPRS Geospatial Week 2025<br>
+      </p>
+
+      <div class="paper" id="snowstnet">
+      <a href="https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/921/2025/isprs-archives-XLVIII-G-2025-921-2025.pdf">pdf</a> |
+      <a href="javascript:toggleblock('snowstnet_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('snowstnet')" class="togglebib">bibtex</a> 
+      <!-- <a href="https://github.com/Naclzno/LIDSOR">code</a> 
+      <iframe src="https://ghbtns.com/github-btn.html?user=Naclzno&repo=LIDSOR&type=star&count=true"
+              frameborder="0" scrolling="0" width="100px" height="20px"
+              style="vertical-align: middle; margin-left: 5px;">
+      </iframe> -->
+      <p align="justify"> <i id="snowstnet_abs">Autonomous vehicles perceive their surroundings through sensors such as LiDAR. However, snowflakes are distributed within the detection range of LiDAR sensors in snowy weather, generating noise points that compromise the sensor's detection performance. To mitigate this issue, we propose SnowSTNet, a point cloud denoising network that removes snowflake noise from LiDAR point clouds. In SnowSTNet, we adopt a two-branch network structure that encodes information in both spatial and temporal dimensions, and inputs the features obtained from the spatial branch into the temporal branch as guidance. We conducted comparative experiments on the SnowyKITTI dataset, and the results show that our method significantly outperforms others, achieving an MIoU of 97.19%. The proposed SnowSTNet ensures the reliable operation of self-driving vehicles in snowy weather and promotes the widespread application of autonomous driving technology in complex environments.</i></p>
+
+<pre xml:space="preserve">
+@Article{isprs-archives-XLVIII-G-2025-921-2025,
+AUTHOR = {Li, Y. and Yan, X. and Huang, H. and Liang, Y. and Zhang, Y. and Yang, J.},
+TITLE = {SnowSTNet: A Spatial-Temporal LiDAR Point Cloud Denoising Network for Autonomous Driving in Snowy Weather},
+JOURNAL = {The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+VOLUME = {XLVIII-G-2025},
+YEAR = {2025},
+PAGES = {921--927},
+URL = {https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/921/2025/},
+DOI = {10.5194/isprs-archives-XLVIII-G-2025-921-2025}
+}
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
 
   <tr>
     <td width="40%" valign="top" align="center">
@@ -637,148 +311,6 @@
     </td>
   </tr>
 
-  <!-- <tr>
-    <td width="40%" valign="top" align="center">
-      <a href="https://seqml.github.io/a2ls/">
-          <img src="images/a2ls/a2ls.png" alt="sym" width="100%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
-      </a>
-    </td>
-    <td width="60%" valign="top">
-      <p><a href="https://seqml.github.io/a2ls/" id="A2LS">
-      <heading>Reinforcement Learning with Automated Auxiliary Loss Search</heading></a><br>
-      Tairan He, Yuge Zhang, Kan Ren, Minghuan Liu, Che Wang, Weinan Zhang, Yuqing Yang, Dongsheng Li<br>
-      NeurIPS 2022<br>
-      </p>
-
-      <div class="paper" id="a2ls">
-      <a href="https://seqml.github.io/a2ls/">webpage</a> |
-      <a href="https://arxiv.org/pdf/2210.06041.pdf">pdf</a> |
-      <a href="javascript:toggleblock('a2ls_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('a2ls')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2210.06041">arXiv</a> |
-      <a href="https://github.com/microsoft/autorl-research/tree/main/a2ls">code</a> 
-
-      <p align="justify"> <i id="a2ls_abs">A good state representation is crucial to solving complicated reinforcement learning (RL) challenges. Many recent works focus on designing auxiliary losses for learning informative representations. Unfortunately, these handcrafted objectives rely heavily on expert knowledge and may be sub-optimal. In this paper, we propose a principled and universal method for learning better representations with auxiliary loss functions, named Automated Auxiliary Loss Search (A2LS), which automatically searches for top-performing auxiliary loss functions for RL. Specifically, based on the collected trajectory data, we define a general auxiliary loss space of size 7.5×1020 and explore the space with an efficient evolutionary search strategy. Empirical results show that the discovered auxiliary loss (namely, A2-winner) significantly improves the performance on both high-dimensional (image) and low-dimensional (vector) unseen tasks with much higher efficiency, showing promising generalization ability to different settings and even different benchmark domains. We conduct a statistical analysis to reveal the relations between patterns of auxiliary losses and RL performance.</i></p>
-
-<pre xml:space="preserve">
-  @inproceedings{zhao2021model,
-    title={Model-free safe control for zero-violation reinforcement learning},
-    author={Zhao, Weiye and He, Tairan and Liu, Changliu},
-    booktitle={5th Annual Conference on Robot Learning},
-    year={2021}
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-
-
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://proceedings.mlr.press/v164/zhao22a.html">
-      <video playsinline autoplay loop muted src="images/issa/Comparison.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-      </a></td>
-    <td width="55%" valign="top">
-      <p><a href="https://proceedings.mlr.press/v164/zhao22a.html" id="ISSA">
-      <heading>Model-free Safe Control for Zero-Violation Reinforcement Learning</heading></a><br>
-      Weiye Zhao, Tairan He, Changliu Liu<br>
-      CoRL 2021<br>
-      </p>
-
-      <div class="paper" id="issa">
-      <a href="https://proceedings.mlr.press/v164/zhao22a/zhao22a.pdf">pdf</a> |
-      <a href="javascript:toggleblock('issa_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('issa')" class="togglebib">bibtex</a> |
-      <a href="https://openreview.net/forum?id=UGp6FDaxB0f">openreview</a> |
-      <a href="https://github.com/TairanHe/ISSA">code</a> 
-
-      <p align="justify"> <i id="issa_abs">While deep reinforcement learning (DRL) has impressive performance in a variety of continuous control tasks, one critical hurdle that limits the application of DRL to physical world is the lack of safety guarantees. It is challenging for DRL agents to persistently satisfy a hard state constraint (known as the safety specification) during training. On the other hand, safe control methods with safety guarantees have been extensively studied. However, to synthesize safe control, these methods require explicit analytical models of the dynamic system; but these models are usually not available in DRL. This paper presents a model-free safe control strategy to synthesize safeguards for DRL agents, which will ensure zero safety violation during training. In particular, we present an implicit safe set algorithm, which synthesizes the safety index (also called the barrier certificate) and the subsequent safe control law only by querying a black-box dynamic function (e.g., a digital twin simulator). The theoretical results indicate the implicit safe set algorithm guarantees forward invariance and finite-time convergence to the safe set. We validate the proposed method on the state-of-the-art safety benchmark Safety Gym. Results show that the proposed method achieves zero safety violation and gains 95 cumulative reward compared to state-of-the-art safe DRL methods. Moreover, it can easily scale to high-dimensional systems.
-      </i></p>
-
-<pre xml:space="preserve">
-  @inproceedings{zhao2021model,
-    title={Model-free safe control for zero-violation reinforcement learning},
-    author={Zhao, Weiye and He, Tairan and Liu, Changliu},
-    booktitle={5th Annual Conference on Robot Learning},
-    year={2021}
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://arxiv.org/abs/2004.09395">
-      <video playsinline autoplay loop muted src="images/ebil/ebil_heat_40.mp4" poster="./images/loading-icon.gif" alt="sym" width="80%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-      </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://arxiv.org/abs/2302.03122" id="EBIL">
-      <heading>Energy-Based Imitation Learning</heading></a><br>
-      Minghuan Liu, Tairan He, Minkai Xu, Weinan Zhang <br>
-      AMASS 2021 <b style="color:rgb(255, 100, 100);">(Oral)</b><br>
-      </p>
-
-      <div class="paper" id="ebil">
-      <a href="https://arxiv.org/pdf/2004.09395.pdf">pdf</a> |
-      <a href="javascript:toggleblock('ebil_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('ebil')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2004.09395">arXiv</a> |
-      <a href="https://github.com/apexrl/EBIL-torch">code</a> 
-      
-
-      <p align="justify"> <i id="ebil_abs">A good state representation is crucial to solving complicated reinforcement learning (RL) challenges. Many recent works focus on designing auxiliary losses for learning informative representations. Unfortunately, these handcrafted objectives rely heavily on expert knowledge and may be sub-optimal. In this paper, we propose a principled and universal method for learning better representations with auxiliary loss functions, named Automated Auxiliary Loss Search (A2LS), which automatically searches for top-performing auxiliary loss functions for RL. Specifically, based on the collected trajectory data, we define a general auxiliary loss space of size 7.5×1020 and explore the space with an efficient evolutionary search strategy. Empirical results show that the discovered auxiliary loss (namely, A2-winner) significantly improves the performance on both high-dimensional (image) and low-dimensional (vector) unseen tasks with much higher efficiency, showing promising generalization ability to different settings and even different benchmark domains. We conduct a statistical analysis to reveal the relations between patterns of auxiliary losses and RL performance.</i></p>
-
-<pre xml:space="preserve">
-  @inproceedings{zhao2021model,
-    title={Model-free safe control for zero-violation reinforcement learning},
-    author={Zhao, Weiye and He, Tairan and Liu, Changliu},
-    booktitle={5th Annual Conference on Robot Learning},
-    year={2021}
-  }
-</pre>
-      </div>
-    </td>
-  </tr> -->
-
-  
-  <!-- <tr>
-    <td width="40%" valign="top" align="center"><a href="https://manipulation-locomotion.github.io">
-    <video playsinline autoplay loop muted src="images/wbc-clip.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://manipulation-locomotion.github.io" id="MANIPLOCO">
-      <heading>Deep Whole-Body Control: Learning a Unified Policy for Manipulation and Locomotion</heading></a><br>
-      Tairan He*, Xuxin Cheng*, Deepak Pathak<br>
-      CoRL 2022 (Oral)<br>
-      <b style="color:rgb(255, 100, 100);">Best Systems Paper Award Finalist (top 4)</b>
-      </p>
-
-      <div class="paper" id="maniploco">
-      <a href="https://manipulation-locomotion.github.io">webpage</a> |
-      <a href="https://arxiv.org/pdf/2210.10044.pdf">pdf</a> |
-      <a href="javascript:toggleblock('maniploco_abs')">abstract</a> |
-      <a shape="rect" href="javascript:togglebib('maniploco')" class="togglebib">bibtex</a> |
-      <a href="https://arxiv.org/abs/2210.10044">arXiv</a> |
-      <a href="https://openreview.net/forum?id=zldI4UpuG7v">OpenReview</a> |
-      <a href="https://www.youtube.com/watch?v=i9EdPl8uJUA">video</a>
-
-      <p align="justify"> <i id="maniploco_abs">An attached arm can significantly increase the applicability of legged robots to several mobile manipulation tasks that are not possible for the wheeled or tracked counterparts. The standard control pipeline for such legged manipulators is to decouple the controller into that of manipulation and locomotion. However, this is ineffective and requires immense engineering to support coordination between the arm and legs, error can propagate across modules causing non-smooth unnatural motions. It is also biological implausible where there is evidence for strong motor synergies across limbs. In this work, we propose to learn a unified policy for whole-body control of a legged manipulator using reinforcement learning. We propose Regularized Online Adaptation to bridge the Sim2Real gap for high-DoF control, and Advantage Mixing exploiting the causal dependency in the action space to overcome local minima during training the whole-body system. We also present a simple design for a low-cost legged manipulator, and find that our unified policy can demonstrate dynamic and agile behaviors across several task setups.</i></p>
-
-<pre xml:space="preserve">
-@inproceedings{fu2022deep,
-  author = {Fu, Zipeng and Cheng, Xuxin and 
-            Pathak, Deepak},
-  title = {Deep Whole-Body Control: Learning a Unified Policy
-           for Manipulation and Locomotion},
-  booktitle = {Conference on Robot Learning ({CoRL})},
-  year = {2022}
-}
-</pre>
-      </div>
-    </td>
-  </tr> -->
-
-
 
 </table>
 
@@ -866,6 +398,8 @@
       <br>
       AAAI Conference on Artificial Intelligence <b>(AAAI)</b> 2023, 2024, 2025
       <br> -->
+      Optics and Laser Technology 2025
+      Scientific Reports 2025
       IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing <b>(JSTARS)</b> 2025
       <br>
       IEEE Transactions on Intelligent Vehicles <b>(T-IV)</b> 2024
@@ -937,72 +471,10 @@
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
 </script>
-<!-- <script xml:space="preserve" language="JavaScript">
-  hideblock('material_review_abs');
-</script>
+
 <script xml:space="preserve" language="JavaScript">
-  hideblock('ieee_iot_abs');
+  hideblock('snowstnet_abs');
 </script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('acm_turc_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('aog_mcts_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('pragmatics_marl_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('collab_marl_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('rma_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('energyloco_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('navloco_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('wococo_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('omnih2o_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('h2o_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('agile-but-safe_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('safedpa_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('acs_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('saferl_survey_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('patchail_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('sisos_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('uaissa_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('autocost_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('a2ls_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('issa_abs');
-</script> -->
 <script xml:space="preserve" language="JavaScript">
   hideblock('adversenet_abs');
 </script>
