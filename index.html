@@ -154,11 +154,11 @@
   <tr>
     <td width="40%" valign="top" align="center">
       <a href="https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/921/2025/isprs-archives-XLVIII-G-2025-921-2025.html">
-          <img src="images/SnowSTNet/picture.png" alt="sym" width="80%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+          <img src="images/SnowSTNet/picture.jpg" alt="sym" width="80%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
       </a>
     </td>
     <td width="60%" valign="top">
-      <p><a href="https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/921/2025/isprs-archives-XLVIII-G-2025-921-2025.html" id="LIDSOR">
+      <p><a href="https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/921/2025/isprs-archives-XLVIII-G-2025-921-2025.html" id="SnowSTNet">
       <heading>SnowSTNet: A Spatial-Temporal LiDAR Point Cloud Denoising Network for Autonomous Driving in Snowy Weather</heading></a><br>
       Yida Li, Xinyuan Yan, He Huang, Yu Liang, Yidan Zhang, Junxing Yang*<br>
       ISPRS Geospatial Week 2025<br>
@@ -191,7 +191,45 @@ DOI = {10.5194/isprs-archives-XLVIII-G-2025-921-2025}
     </td>
   </tr>
 
+  <tr>
+    <td width="40%" valign="top" align="center">
+      <a href="https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/1733/2025/">
+          <img src="images/TADNet/picture.jpg" alt="sym" width="80%" style="padding-top:0px; padding-bottom:0px; border-radius:15px; height: auto;">
+      </a>
+    </td>
+    <td width="60%" valign="top">
+      <p><a href="https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/1733/2025/" id="TADNet">
+      <heading>TADNet: A Time and Attention-Based Point Cloud Denoising Network for Autonomous Driving in Adverse Weather</heading></a><br>
+      Yidan Zhang, He Huang, Xinyuan Yan, Yu Liang, Yida Li, Junxing Yang*<br>
+      ISPRS Geospatial Week 2025<br>
+      </p>
 
+      <div class="paper" id="tadnet">
+      <a href="https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/1733/2025/isprs-archives-XLVIII-G-2025-1733-2025.pdf">pdf</a> |
+      <a href="javascript:toggleblock('tadnet_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('tadnet')" class="togglebib">bibtex</a> 
+      <!-- <a href="https://github.com/Naclzno/LIDSOR">code</a> 
+      <iframe src="https://ghbtns.com/github-btn.html?user=Naclzno&repo=LIDSOR&type=star&count=true"
+              frameborder="0" scrolling="0" width="100px" height="20px"
+              style="vertical-align: middle; margin-left: 5px;">
+      </iframe> -->
+      <p align="justify"> <i id="tadnet_abs">Lidar technology is widely used in the field of autonomous driving by virtue of its high precision. However, under special weather conditions such as rain, snow, fog, etc., suspended particles in the air can contaminate the point cloud data collected by LIDAR, which leads to a significant performance degradation of the vehicle sensing system and increases the driving safety risk. To address this problem, we propose A Time and Attention-Based Point Cloud Denoising Network for Autonomous Driving in Adverse Weather (TADNet). The method is based on the 3D-OutDet network with the addition of Convolutional Block Attention Module (CBAM), which highlights important features and suppresses minor ones. The original ResNet base network architecture is changed to Temporal-Bottleneck ResNet (TB-ResNet) to improve the network's ability to recognize rain, snow and fog noise. We conducted comparative experiments between the TADNet method proposed in this paper and the filter-based point cloud denoising method and the deep learning-based point cloud denoising method. The experimental results show that the denoising effect of TADNet in three kinds of bad weather, namely rain, snow and fog, is better than other methods, which can remove different kinds of noise with different intensities and retain the environmental features, and has the best performance of IoU and MIoU in all kinds of weather conditions.</i></p>
+
+<pre xml:space="preserve">
+@Article{isprs-archives-XLVIII-G-2025-1733-2025,
+AUTHOR = {Zhang, Y. and Huang, H. and Yan, X. and Liang, Y. and Li, Y. and Yang, J.},
+TITLE = {TADNet: A Time and Attention-Based Point Cloud Denoising Network for Autonomous Driving in Adverse Weather},
+JOURNAL = {The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+VOLUME = {XLVIII-G-2025},
+YEAR = {2025},
+PAGES = {1733--1739},
+URL = {https://isprs-archives.copernicus.org/articles/XLVIII-G-2025/1733/2025/},
+DOI = {10.5194/isprs-archives-XLVIII-G-2025-1733-2025}
+}
+</pre>
+      </div>
+    </td>
+  </tr>
 
   <tr>
     <td width="40%" valign="top" align="center">
@@ -386,18 +424,6 @@ DOI = {10.5194/isprs-archives-XLVIII-G-2025-921-2025}
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
   <tr>
     <td style="padding:20px;width:100%;vertical-align:middle">
-      <!-- International Conference on Machine Learning <b>(ICML)</b>, 2024
-      <br>
-      International Conference on Learning Representations <b>(ICLR)</b>, 2024
-      <br>
-      IEEE Conference on Decision and Control <b>(CDC)</b>, 2023
-      <br>  
-      Conference on Neural Information Processing Systems <b>(NeurIPS)</b>, 2023
-      <br>
-      Learning for Dynamics & Control Conference <b>(L4DC)</b> 2023
-      <br>
-      AAAI Conference on Artificial Intelligence <b>(AAAI)</b> 2023, 2024, 2025
-      <br> -->
       Optics and Laser Technology 2025
       <br>
       Scientific Reports 2025
@@ -476,6 +502,9 @@ hideallbibs();
 
 <script xml:space="preserve" language="JavaScript">
   hideblock('snowstnet_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('tadnet_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('adversenet_abs');
